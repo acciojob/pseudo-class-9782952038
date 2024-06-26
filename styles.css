@@ -1,10 +1,16 @@
 /*  your css code here. If applicable */
 #container{
-	margin:20px;
+    margin:20px;
 }
-p:first-line{
-	color:rgb(255, 0, 0);
+
+#container::before{
+    content: "Before Element";
+    color: #f00;
+    font-size: 20px;
 }
-p:last-child{
-	color:rgb(255, 0, 0);
+
+#container::after{
+    content: "After Element";
+    color: #f00;
+    font-size: 20px;
 }
